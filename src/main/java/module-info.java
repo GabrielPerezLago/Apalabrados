@@ -4,5 +4,5 @@ module com.gabriel.apalabrados.apalabrados {
 
 
     opens com.gabriel.apalabrados.apalabrados to javafx.fxml;
-    exports com.gabriel.apalabrados.apalabrados;
+    exports com.gabriel.apalabrados;
 }
