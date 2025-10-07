@@ -1,5 +1,7 @@
 package com.gabriel.apalabrados;
 
+import com.gabriel.apalabrados.model.ApalabradosModel;
+import com.gabriel.apalabrados.model.interfaces.PalabrasInterface;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -24,12 +26,12 @@ public class Main extends Application {
 
         Label label = new Label();
         label.setText("Esto es otra prueba");
-        Button btnClose = new Button("Cerrar");
-        btnClose.setOnAction(e -> primaryStage.close() );
+       //Button btnClose = new Button("Cerrar");
+        //btnClose.setOnAction(e -> primaryStage.close() );
 
         firstStack.getChildren().add(btn);
         secondStack.getChildren().add(label);
-        secondStack.getChildren().add(btnClose);
+        //secondStack.getChildren().add(btnClose);
 
         primaryStage.setTitle("Prueba");
         primaryStage.setScene(sceneOne);
@@ -39,6 +41,10 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+        // launch(args);
+
+        ApalabradosModel apalabrados = new ApalabradosModel();
+
+        apalabrados.juego();
     }
 }

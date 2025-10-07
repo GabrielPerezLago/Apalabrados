@@ -1,5 +1,5 @@
 package com.gabriel.apalabrados.model.interfaces;
 
 public interface PalabrasInterface {
-    public String getPalabras();
+    public String getPalabra();
 }
