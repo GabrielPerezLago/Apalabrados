@@ -15,9 +15,9 @@ public class ApalabradosModel implements ApalabradosModelInteface {
     public void juego() {
         int contador = 0;
         PalabrasModel randomWord = new PalabrasModel();
+
         this.palabra = randomWord.getPalabra();
         Scanner kb = new Scanner(System.in);
-
 
         while (contador < palabra.length()) {
             System.out.println("Dame una letra");
@@ -29,6 +29,7 @@ public class ApalabradosModel implements ApalabradosModelInteface {
                 System.out.println("La letra NO esta en la palabra");
             }
         }
+
         if (contador == palabra.length()) {
             System.out.println("Enorabuena , has acertado la palabra , la palabra era : "  +  palabra );
         }
