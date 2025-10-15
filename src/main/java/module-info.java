@@ -3,6 +3,7 @@ module com.gabriel.apalabrados.apalabrados {
     requires javafx.fxml;
     requires java.desktop;
     requires javafx.graphics;
+    requires java.management;
 
 
     opens com.gabriel.apalabrados.apalabrados to javafx.fxml;
