@@ -1,11 +1,12 @@
-module com.gabriel.apalabrados.apalabrados {
+module com.gabriel.apalabrados.apalabrados_dos {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.desktop;
+    requires annotations;
     requires javafx.graphics;
-    requires java.management;
+    requires java.desktop;
+    requires java.logging;
 
 
-    opens com.gabriel.apalabrados.apalabrados to javafx.fxml;
-    exports com.gabriel.apalabrados;
+    opens com.gabriel.apalabrados.apalabrados_dos to javafx.fxml;
+    exports com.gabriel.apalabrados.apalabrados_dos;
 }
